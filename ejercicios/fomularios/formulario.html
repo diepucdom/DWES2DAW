@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formulario.php" method="post">
+        <label for="nombreape">Nombre y apellidos:</label>
+        <input type="text" id="nombreape" name="nombreape" required><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="url">URL PAGINA PERSONAL:</label>
+        <input type="url" id="url" name="url" required><br><br>
+
+        <label for="sexo">SEXO:</label>
+
+        <input type="radio" id="hombre" name="sexo" value="hombre" required>
+        <label for="hombre">Hombre</label>
+
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label><br><br>
+
+        <label for="numconv">Número de convivientes:</label>
+        <input type="number" id="numeroconvivientes" name="numconv" required><br><br>
+
+        <label>Aficiones:</label><br>
+
+        <input type="checkbox" id="musica" name="aficiones[]" value="Música">
+        <label for="musica">Música</label><br>
+
+        <input type="checkbox" id="deporte" name="aficiones[]" value="Deporte">
+        <label for="deporte">Deporte</label><br>
+
+        <input type="checkbox" id="videojuegos" name="aficiones[]" value="Videojuegos">
+        <label for="videojuegos">Videojuegos</label><br>
+
+        <input type="checkbox" id="lectura" name="aficiones[]" value="Lectura">
+        <label for="lectura">Lectura</label><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="menufav">MENÚ FAVORITO:</label><br>
+        <select id="menufav" name="menufav[]" multiple required>
+            <option value="Vegano">Vegano</option>
+            <option value="Carnívoro">omnívoro</option>
+            <option value="Vegetariano">Vegetariano</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+</body>
+</html>
